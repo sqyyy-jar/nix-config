@@ -85,6 +85,7 @@ in {
       ../home/programs.nix
       ../home/vscode.nix
       ../home/zsh.nix
+      ../home/neovim.nix
 
       inputs.nix-index-database.hmModules.nix-index
     ];
@@ -107,6 +108,7 @@ in {
       ../home/programs.nix
       ../home/vscode.nix
       ../home/zsh.nix
+      ../home/neovim.nix
 
       inputs.nix-index-database.hmModules.nix-index
     ];

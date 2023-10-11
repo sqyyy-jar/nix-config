@@ -42,7 +42,7 @@ in {
     envExtra = ''
       export GPG_TTY="$(tty)"
 
-      export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
+      export ZSH_CACHE_DIR="$HOME/.cache/zsh"
       mkdir -p $ZSH_CACHE_DIR/completions
     '';
   };

@@ -14,12 +14,19 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+
+    nix-index-database = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs } @ inputs: let
+  outputs = { self, nixpkgs, ... } @ inputs: let
     inherit (self) outputs;
 
-    forEachSystem = nixpkgs.libs.genAttrs ["x86_64-linux"];
+    forEachSystem = nixpkgs.lib.genAttrs [
+      "x86_64-linux"
+    ];
 
     forEachPkgs = f: forEachSystem (sys: f nixpkgs.legacyPackages.${sys});
   in {
@@ -30,10 +37,5 @@
     overlays = import ./overlays {inherit inputs outputs;};
 
     nixosConfigurations = import ./hosts {inherit inputs outputs;};
-
-    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [];
-    };
   };
 }

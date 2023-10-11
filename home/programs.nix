@@ -28,7 +28,6 @@ in {
       tokei
       wget
       # Applications
-      flameshot
       gimp
       keepassxc
       obs-studio
