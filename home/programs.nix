@@ -18,6 +18,11 @@ in {
       # Development
       #devenv.packages."${system}".devenv
       rustup
+      gcc
+      chez
+      jdk
+      lua-language-server
+      gh
 
       # System utilities
       ouch
@@ -27,10 +32,16 @@ in {
       ripgrep
       tokei
       wget
+      btop
+      neofetch
       # Applications
       gimp
       keepassxc
       obs-studio
+      obsidian
+      geogebra
+      tidal-hifi
+      kdeconnect
 
       # Communication
       discord
@@ -38,6 +49,7 @@ in {
       # Development
       python311
       gdb
+      dia
       unstable.jetbrains.idea-ultimate
 
       # Archives
