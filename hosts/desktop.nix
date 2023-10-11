@@ -8,7 +8,10 @@
   ];
 
   boot = {
-    kernelModules = [];
+    initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" "sr_mod" ];
+    initrd.kernelModules = [ ];
+
+    kernelModules = [ "kvm-intel" ];
     extraModulePackages = [];
 
     loader = {
@@ -30,24 +33,17 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
-  # fileSystems."/" = {
-  #   device = "/dev/disk/by-uuid/42993a77-a622-4198-8798-7edf43e59107";
-  #   fsType = "ext4";
-  # };
-  # fileSystems."/boot" = {
-  #   device = "/dev/disk/by-uuid/CC89-57F0";
-  #   fsType = "vfat";
-  # };
-  # fileSystems."/home" = {
-  #   device = "/dev/disk/by-uuid/7edab4b6-ed9a-482a-8ab8-d9476342fea0";
-  #   fsType = "ext4";
-  # };
-  #
-  # swapDevices = [
-  #   {device = "/dev/disk/by-uuid/a5acf252-9402-4724-970c-ba3dd5645402";}
-  # ];
+  fileSystems."/" =
+    { device = "/dev/disk/by-uuid/fa9da6e8-3309-4358-9ce2-a7df94d271aa";
+      fsType = "ext4";
+    };
 
-  networking = {
-    hostName = "nixos-desktop";
-  };
+  fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/AC8F-1F13";
+      fsType = "vfat";
+    };
+
+  swapDevices = [ ];
+
+  networking.hostName = "nixos-desktop";
 }

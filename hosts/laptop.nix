@@ -8,7 +8,10 @@
   ];
 
   boot = {
-    kernelModules = [];
+    initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "sd_mod" ];
+    initrd.kernelModules = [ ];
+
+    kernelModules = [ "kvm-amd" ];
     extraModulePackages = [];
 
     loader = {
@@ -30,31 +33,18 @@
 
   hardware.cpu.amd.updateMicrocode = true;
 
-  # fileSystems."/" = {
-  #   device = "/dev/disk/by-uuid/42993a77-a622-4198-8798-7edf43e59107";
-  #   fsType = "ext4";
-  # };
-  # fileSystems."/boot" = {
-  #   device = "/dev/disk/by-uuid/CC89-57F0";
-  #   fsType = "vfat";
-  # };
-  # fileSystems."/home" = {
-  #   device = "/dev/disk/by-uuid/7edab4b6-ed9a-482a-8ab8-d9476342fea0";
-  #   fsType = "ext4";
-  # };
-  #
-  # swapDevices = [
-  #   {device = "/dev/disk/by-uuid/a5acf252-9402-4724-970c-ba3dd5645402";}
-  # ];
-
-  networking = {
-    hostName = "nixos-laptop";
-
-    networkmanager = {
-      enable = true;
-      wifi.macAddress = "random";
-      ethernet.macAddress = "random";
+  fileSystems."/" =
+    { device = "/dev/disk/by-uuid/7f371914-c8f3-489a-8ce7-f1bbeddeb638";
+      fsType = "ext4";
     };
-  };
+
+  fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/2AA9-A98A";
+      fsType = "vfat";
+    };
+
+  swapDevices = [ ];
+
+  networking.hostName = "nixos-laptop";
 }
 
