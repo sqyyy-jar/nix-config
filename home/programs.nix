@@ -22,7 +22,6 @@ in {
       chez
       jdk
       lua-language-server
-      gh
 
       # System utilities
       ouch
