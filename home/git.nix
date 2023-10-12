@@ -18,6 +18,7 @@
       pull.rebase = true;
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
+      credential."https://github.com".helper = "gh auth git-credential";
     };
 
     lfs.enable = true;
