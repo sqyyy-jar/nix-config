@@ -2,6 +2,7 @@
   pkgs,
   ...
 }: {
+  home.packages = with pkgs; [ git-credential-keepassxc ];
   programs.git = {
     enable = true;
     package = pkgs.unstable.gitAndTools.gitFull;
@@ -18,7 +19,8 @@
       pull.rebase = true;
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
-      credential."https://github.com".helper = "gh auth git-credential";
+      # credential."https://github.com".helper = "gh auth git-credential";
+      credential."https://github.com".helper = "keepassxc --git-groups";
     };
 
     lfs.enable = true;
