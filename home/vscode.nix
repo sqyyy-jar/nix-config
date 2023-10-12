@@ -12,6 +12,7 @@
       "editor.fontFamily" = "'Fira Code Nerd Font', 'Droid Sans Mono', 'monospace'";
       "editor.fontLigatures" = true;
       "editor.selectionClipboard" = false;
+      "editor.inlayHints.enabled" = "off";
       "files.autoSave" = "afterDelay";
       "editor.formatOnSave" = true;
       # NOTE: Depends on the `enkia.tokyo-night` extension.
@@ -51,6 +52,9 @@
       "editor.quickSuggestions" = {
         "other" = "inline";
       };
+
+      # NOTE: Depends on the `vim` package.
+      "vim.useSystemClipboard" = true;
     };
 
     extensions = with pkgs.unstable.vscode-extensions; [
@@ -63,6 +67,7 @@
       matklad.rust-analyzer
       ms-python.python
       charliermarsh.ruff
+      vscodevim.vim
     ];
   };
 }
