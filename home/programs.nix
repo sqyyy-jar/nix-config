@@ -41,6 +41,7 @@ in {
       geogebra
       tidal-hifi
       kdeconnect
+      prismlauncher
 
       # Communication
       discord
