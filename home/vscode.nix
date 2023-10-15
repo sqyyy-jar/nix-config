@@ -18,6 +18,7 @@
       # NOTE: Depends on the `enkia.tokyo-night` extension.
       "workbench.colorTheme" = "Tokyo Night";
       "workbench.startupEditor" = "none";
+      "search.useGlobalIgnoreFiles" = true;
 
       "rust-analyzer.rustfmt.rangeFormatting.enable" = true;
       "rust-analyzer.check.command" = "clippy";
