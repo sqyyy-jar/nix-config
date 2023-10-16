@@ -37,7 +37,7 @@ in {
       gimp
       keepassxc
       obs-studio
-      obsidian
+      unstable.obsidian
       geogebra
       tidal-hifi
       kdeconnect
