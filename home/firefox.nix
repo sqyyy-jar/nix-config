@@ -24,7 +24,7 @@ in {
     profiles = {
       ${config.home.username} = {
         search = {
-          default = "DuckDuckGo"; # ?
+          default = "DuckDuckGo";
           force = true;
         };
       };
