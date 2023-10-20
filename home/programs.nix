@@ -42,6 +42,7 @@ in {
       tidal-hifi
       kdeconnect
       prismlauncher
+      vivaldi
 
       # Communication
       discord
