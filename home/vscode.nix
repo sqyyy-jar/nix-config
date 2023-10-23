@@ -13,10 +13,9 @@
       "editor.fontLigatures" = true;
       "editor.selectionClipboard" = false;
       "editor.inlayHints.enabled" = "off";
-      "files.autoSave" = "afterDelay";
       "editor.formatOnSave" = true;
-      # NOTE: Depends on the `enkia.tokyo-night` extension.
-      "workbench.colorTheme" = "Tokyo Night";
+      # NOTE: Depends on the `antfu.theme-vitesse` extension.
+      "workbench.colorTheme" = "Vitesse Dark";
       "workbench.startupEditor" = "none";
       "search.useGlobalIgnoreFiles" = true;
 
