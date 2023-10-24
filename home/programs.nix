@@ -22,6 +22,7 @@ in {
       chez
       jdk
       lua-language-server
+      cargo-generate
 
       # System utilities
       ouch

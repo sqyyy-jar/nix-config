@@ -32,7 +32,7 @@
   in {
     packages = forEachPkgs (pkgs: (import ./pkgs {inherit pkgs;}));
 
-    # devShells = forEachPkgs (pkgs: import ./shell.nix {inherit pkgs;});
+    devShells = forEachPkgs (pkgs: import ./shell.nix {inherit pkgs;});
 
     overlays = import ./overlays {inherit inputs outputs;};
 
