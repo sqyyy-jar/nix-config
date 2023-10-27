@@ -18,6 +18,7 @@
       "workbench.colorTheme" = "Vitesse Dark";
       "workbench.startupEditor" = "none";
       "search.useGlobalIgnoreFiles" = true;
+      "extensions.autoUpdate" = false;
 
       "rust-analyzer.rustfmt.rangeFormatting.enable" = true;
       "rust-analyzer.check.command" = "clippy";
@@ -58,16 +59,14 @@
     };
 
     extensions = with pkgs.unstable.vscode-extensions; [
-      enkia.tokyo-night
       editorconfig.editorconfig
       jnoortheen.nix-ide
       kamadorueda.alejandra
       mkhl.direnv
       tamasfe.even-better-toml
       matklad.rust-analyzer
-      ms-python.python
-      charliermarsh.ruff
       vscodevim.vim
+      vadimcn.vscode-lldb
     ];
   };
 }

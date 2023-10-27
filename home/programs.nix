@@ -23,6 +23,7 @@ in {
       jdk
       lua-language-server
       cargo-generate
+      lldb
 
       # System utilities
       ouch
@@ -53,6 +54,7 @@ in {
       gdb
       dia
       unstable.jetbrains.idea-ultimate
+      unstable.jetbrains.rust-rover
 
       # Archives
       ark
