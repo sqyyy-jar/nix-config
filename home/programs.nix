@@ -55,6 +55,7 @@ in {
       dia
       unstable.jetbrains.idea-ultimate
       unstable.jetbrains.rust-rover
+      micro
 
       # Archives
       ark
