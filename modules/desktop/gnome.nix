@@ -21,4 +21,8 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [ gnomeExtensions.appindicator ];
+
+  services.dbus.packages = with pkgs; [ gnome.gnome-settings-daemon ];
 }

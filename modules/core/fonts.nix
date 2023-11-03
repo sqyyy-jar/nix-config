@@ -4,8 +4,8 @@
     enableDefaultFonts = true;
 
     fontconfig.defaultFonts = {
-      serif = ["NotoSerif Nerd Font" "Noto Serif"];
-      sansSerif = ["Hack Nerd Font" "NotoSans Nerd Font" "Noto Sans"];
+      serif = ["Noto Sans" "Noto Sans Korean"];
+      sansSerif = ["Noto Sans" "Noto Sans Korean"];
       monospace = ["FiraCode Nerd Font" "Fira Code"];
       emoji = ["Noto Color Emoji"];
     };
@@ -20,6 +20,7 @@
       material-icons
       material-design-icons
       noto-fonts
+      noto-fonts-cjk-sans
       noto-fonts-emoji
       ubuntu_font_family
       cascadia-code

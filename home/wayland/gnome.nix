@@ -17,8 +17,5 @@ in {
     # Miscellaneous utilities.
     #pciutils
     imv
-
-    # Extensions
-    gnomeExtensions.appindicator
   ];
 }

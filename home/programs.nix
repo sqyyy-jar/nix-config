@@ -44,7 +44,7 @@ in {
       tidal-hifi
       kdeconnect
       prismlauncher
-      vivaldi
+      ungoogled-chromium # PWAs
 
       # Communication
       discord
