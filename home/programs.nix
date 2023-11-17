@@ -45,6 +45,7 @@ in {
       kdeconnect
       prismlauncher
       ungoogled-chromium # PWAs
+      libreoffice
 
       # Communication
       discord
