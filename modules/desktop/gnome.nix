@@ -22,7 +22,10 @@
     pulse.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [ gnomeExtensions.appindicator ];
+  environment.systemPackages = with pkgs.gnomeExtensions; [
+    appindicator
+    user-themes-x
+  ];
 
   services.dbus.packages = with pkgs; [ gnome.gnome-settings-daemon ];
 }
