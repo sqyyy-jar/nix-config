@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   time.timeZone = "Europe/Berlin";
 
   i18n.defaultLocale = "en_US.UTF-8";
@@ -13,6 +13,11 @@
     LC_PAPER = "de_DE.UTF-8";
     LC_TELEPHONE = "de_DE.UTF-8";
     LC_TIME = "de_DE.UTF-8";
+  };
+
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs; [fcitx5-gtk fcitx5-hangul fcitx5-configtool];
   };
 
   console = {
