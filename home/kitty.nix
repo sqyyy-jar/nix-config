@@ -15,13 +15,9 @@
       size = 14;
     };
     settings = {
-      # ...
-      background_image = "~/Pictures/uwp984724.png";
-      # background_image = "~/Pictures/wp7629134.png";
-      background_image_layout = "scaled";
-      background_tint = "0.75";
       hide_window_decorations = true;
       tab_bar_style = "slant";
+      background = "#251f31";
     };
     theme = "Catppuccin-Mocha";
     shellIntegration.enableZshIntegration = true;
