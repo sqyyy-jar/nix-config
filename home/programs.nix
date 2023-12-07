@@ -48,7 +48,9 @@ in {
       libreoffice
 
       # Communication
-      discord
+      (discord.override {
+        withVencord = true;
+      })
 
       # Development
       python311

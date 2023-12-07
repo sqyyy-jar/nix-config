@@ -22,12 +22,7 @@ in {
       then pkgs.unstable.firefox-bin
       else pkgs.firefox-wayland;
     profiles = {
-      ${config.home.username} = {
-        search = {
-          default = "DuckDuckGo";
-          force = true;
-        };
-      };
+      ${config.home.username} = {};
     };
   };
 }
