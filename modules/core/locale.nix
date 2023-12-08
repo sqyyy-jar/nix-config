@@ -15,11 +15,6 @@
     LC_TIME = "de_DE.UTF-8";
   };
 
-  i18n.inputMethod = {
-    enabled = "fcitx5";
-    fcitx5.addons = with pkgs; [fcitx5-gtk fcitx5-hangul fcitx5-configtool];
-  };
-
   console = {
     font = "Lat2-Terminus16";
     keyMap = "us";
