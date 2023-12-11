@@ -67,7 +67,7 @@
         ++ (optionals (length homeModules != 0) [(makeHome homeModules system)]);
     };
 in {
-  desktop = makeSystem {
+  nixos-desktop = makeSystem {
     system = "x86_64-linux";
     modules = [
       ./desktop.nix
@@ -92,7 +92,7 @@ in {
     ];
   };
 
-  laptop = makeSystem {
+  nixos-laptop = makeSystem {
     system = "x86_64-linux";
     modules = [
       ./laptop.nix
