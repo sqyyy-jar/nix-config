@@ -38,6 +38,7 @@ in {
       neofetch
       # Applications
       gimp
+      inkscape
       keepassxc
       obs-studio
       unstable.obsidian
