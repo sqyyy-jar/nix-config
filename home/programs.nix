@@ -39,6 +39,7 @@ in {
       # Applications
       gimp
       inkscape
+      rnote
       keepassxc
       obs-studio
       unstable.obsidian
