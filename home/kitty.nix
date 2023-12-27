@@ -11,7 +11,7 @@
     enable = true;
     package = pkgs.unstable.kitty;
     font = {
-      name = "Cascadia Code";
+      name = "JetBrains Mono";
       size = 14;
     };
     settings = {
