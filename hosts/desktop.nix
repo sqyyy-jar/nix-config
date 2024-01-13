@@ -26,7 +26,7 @@
       };
     };
 
-    supportedFilesystems = ["ntfs"];
+    supportedFilesystems = [ "ntfs" ];
 
     kernelPackages = pkgs.unstable.linuxPackages_latest;
   };

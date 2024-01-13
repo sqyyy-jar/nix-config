@@ -49,6 +49,8 @@ in {
       prismlauncher
       ungoogled-chromium # PWAs
       libreoffice
+      unstable.planify
+      lite-xl
 
       # Communication
       (discord.override {

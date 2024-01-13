@@ -4,10 +4,10 @@
   ...
 }: {
   # Make sure nouveau never runs alongside the official driver.
-  boot.blacklistedKernelModules = ["nouveau"];
+  boot.blacklistedKernelModules = [ "nouveau" ];
 
   # Configure the video driver to use on Wayland and X11.
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   # Enable Vulkan support.
   environment.systemPackages = with pkgs; [
@@ -27,16 +27,20 @@
   hardware = {
     opengl = {
       enable = true;
+      driSupport = true;
       driSupport32Bit = true;
 
       extraPackages = with pkgs; [nvidia-vaapi-driver];
     };
 
     nvidia = {
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
-
-      powerManagement.enable = true;
       modesetting.enable = true;
+      powerManagement.enable = false;
+      powerManagement.finegrained = false;
+      open = false;
+      nvidiaSettings = true;
+      # package = config.boot.kernelPackages.nvidiaPackages.stable;
+      package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;
     };
   };
 }
