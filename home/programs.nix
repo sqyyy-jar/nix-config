@@ -51,6 +51,7 @@ in {
       libreoffice
       unstable.planify
       lite-xl
+      unstable.floorp
 
       # Communication
       (discord.override {
