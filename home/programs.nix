@@ -52,6 +52,7 @@ in {
       unstable.planify
       lite-xl
       unstable.floorp
+      unstable.anytype
 
       # Communication
       (discord.override {
