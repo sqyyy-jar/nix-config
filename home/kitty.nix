@@ -11,7 +11,7 @@
     enable = true;
     package = pkgs.unstable.kitty;
     font = {
-      name = "JetBrains Mono";
+      name = "Ubuntu Mono";
       size = 14;
     };
     settings = {
