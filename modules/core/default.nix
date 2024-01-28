@@ -10,5 +10,6 @@
       ./users.nix
       ./zsh.nix
       ./networking.nix
+      ./swap.nix
     ];
 }
