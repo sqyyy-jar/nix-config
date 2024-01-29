@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   fonts = {
     fontDir.enable = true;
-    enableDefaultFonts = true;
+    enableDefaultPackages = true;
 
     fontconfig.defaultFonts = {
       serif = ["Noto Sans" "Noto Sans Korean"];
@@ -10,7 +10,7 @@
       emoji = ["Noto Color Emoji"];
     };
 
-    fonts = with pkgs; [
+    packages = with pkgs; [
       (nerdfonts.override {fonts = ["FiraCode" "Hack" "Noto"];})
       fira-code
       fira-code-symbols

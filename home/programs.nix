@@ -29,7 +29,7 @@ in {
       # System utilities
       ouch
       bat
-      exa
+      eza
       fd
       ripgrep
       tokei
