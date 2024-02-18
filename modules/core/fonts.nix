@@ -24,6 +24,7 @@
       noto-fonts-emoji
       ubuntu_font_family
       cascadia-code
+      iosevka
     ];
   };
 }

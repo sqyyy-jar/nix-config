@@ -43,6 +43,7 @@ in {
       keepassxc
       obs-studio
       unstable.obsidian
+      unstable.logseq
       geogebra
       tidal-hifi
       kdeconnect

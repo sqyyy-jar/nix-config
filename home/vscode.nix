@@ -23,6 +23,7 @@
       "rust-analyzer.rustfmt.rangeFormatting.enable" = true;
       "rust-analyzer.check.command" = "clippy";
       "rust-analyzer.inlayHints.lifetimeElisionHints.enable" = "skip_trivial";
+      "rust-analyzer.server.path" = "/etc/profiles/per-user/sqyyy/bin/rust-analyzer";
 
       "[python]" = {
         "editor.formatOnSave" = true;
@@ -56,6 +57,7 @@
 
       # NOTE: Depends on the `vim` package.
       "vim.useSystemClipboard" = true;
+
     };
 
     extensions = with pkgs.unstable.vscode-extensions; [

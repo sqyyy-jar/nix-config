@@ -20,7 +20,7 @@ in {
     dotDir = ".config/zsh";
 
     shellAliases = {
-      ls = "exa";
+      ls = "eza";
       cat = "bat";
       diff = "diff --color=auto";
 

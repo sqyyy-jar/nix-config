@@ -11,7 +11,8 @@
     enable = true;
     package = pkgs.unstable.kitty;
     font = {
-      name = "Ubuntu Mono";
+      # name = "Ubuntu Mono";
+      name = "Iosevka";
       size = 14;
     };
     settings = {
