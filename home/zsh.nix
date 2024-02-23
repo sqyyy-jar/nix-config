@@ -32,7 +32,11 @@ in {
       extended = true;
     };
 
-    oh-my-zsh.enable = true;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" ];
+      theme = "theunraveler";
+    };
 
     plugins = with pkgs; [
       (zshPlugin zsh-syntax-highlighting)
@@ -73,7 +77,7 @@ in {
   };
 
   programs.starship = {
-    enable = true;
+    enable = false;
     enableZshIntegration = true;
 
     settings = {
