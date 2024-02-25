@@ -23,6 +23,7 @@ in {
       ls = "eza";
       cat = "bat";
       diff = "diff --color=auto";
+      cdd = "cd /mnt/data";
 
       rebuild = "sudo nixos-rebuild switch";
     };
@@ -74,31 +75,5 @@ in {
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
-  };
-
-  programs.starship = {
-    enable = false;
-    enableZshIntegration = true;
-
-    settings = {
-      add_newline = false;
-
-      username.show_always = true;
-      nix_shell.heuristic = true;
-
-      character = {
-        success_symbol = "[λ ›](bold green)";
-        error_symbol = "[λ ›](bold red)";
-        vicmd_symbol = "[λ ·](bold green)";
-      };
-
-      cmd_duration = {
-        show_notifications = false;
-        min_time = 10000;
-        min_time_to_notify = 60000;
-      };
-
-      command_timeout = 1000;
-    };
   };
 }
