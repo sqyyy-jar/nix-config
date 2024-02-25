@@ -72,12 +72,10 @@ in {
     modules = [
       ./desktop.nix
 
-      ../modules/desktop/gnome.nix
+      ../modules/desktop/kde.nix
       ../modules/hw/nvidia.nix
     ];
     homeModules = [
-      ../home/wayland
-
       ../home/firefox.nix
       ../home/git.nix
       ../home/gpg.nix
