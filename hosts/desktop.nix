@@ -43,7 +43,14 @@
       fsType = "vfat";
     };
 
-  swapDevices = [ ];
+  fileSystems."/mnt/data" =
+    { device = "/dev/disk/by-uuid/2ebfd504-1614-470f-a53d-2deeba59ba3b";
+      fsType = "ext4";
+    };
+
+  swapDevices = [ {
+    device = "/dev/disk/by-uuid/788bb1e6-be65-4414-823f-0eae6085d2c0";
+  } ];
 
   networking.hostName = "nixos-desktop";
 }
