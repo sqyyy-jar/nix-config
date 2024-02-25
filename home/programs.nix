@@ -44,7 +44,7 @@ in {
       obs-studio
       unstable.obsidian
       unstable.logseq
-      geogebra
+      unstable.geogebra
       tidal-hifi
       kdeconnect
       prismlauncher
