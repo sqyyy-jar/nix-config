@@ -24,7 +24,6 @@ in {
       lua-language-server
       cargo-generate
       lldb
-      unstable.dioxus-cli
 
       # System utilities
       ouch
@@ -53,7 +52,6 @@ in {
       unstable.planify
       lite-xl
       unstable.floorp
-      unstable.anytype
 
       # Communication
       (discord.override {
