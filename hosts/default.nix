@@ -72,7 +72,7 @@ in {
     modules = [
       ./desktop.nix
 
-      ../modules/desktop/kde.nix
+      ../modules/desktop/i3.nix
       ../modules/hw/nvidia.nix
     ];
     homeModules = [
