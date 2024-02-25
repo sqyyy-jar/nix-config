@@ -97,7 +97,7 @@ in {
     modules = [
       ./laptop.nix
 
-      ../modules/desktop/gnome.nix
+      ../modules/desktop/sway.nix
     ];
     homeModules = [
       ../home/wayland
