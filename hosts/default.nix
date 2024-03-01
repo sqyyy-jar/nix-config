@@ -99,6 +99,7 @@ in {
     ];
     homeModules = [
       ../home/wayland
+      ../home/waybar.nix
 
       ../home/firefox.nix
       ../home/git.nix

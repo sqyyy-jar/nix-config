@@ -39,15 +39,14 @@
     gnome3.adwaita-icon-theme  # default gnome cursors
     swaylock
     swayidle
-    rofi
+    fuzzel # application launcher
     xfce.thunar
-    waybar
-    grim # screenshot functionality
-    slurp # screenshot functionality
+    flameshot # screenshot tool
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
-    bemenu # wayland clone of dmenu
     mako # notification system developed by swaywm maintainer
     wdisplays # tool to configure displays
+    brightnessctl # brightness configuration
+    pulseaudio # volume configuration
   ];
 
   programs.sway = {
