@@ -20,10 +20,11 @@ in {
       rustup
       gcc
       chez
-      jdk
+      unstable.jdk21
       lua-language-server
       cargo-generate
       lldb
+      dotnet-sdk
 
       # System utilities
       ouch
@@ -35,6 +36,9 @@ in {
       wget
       btop
       neofetch
+      flameshot
+      sapling
+
       # Applications
       gimp
       inkscape
@@ -57,13 +61,16 @@ in {
       (discord.override {
         withVencord = true;
       })
+      unstable.thunderbird
 
       # Development
       python311
       gdb
       dia
       unstable.jetbrains.idea-ultimate
+      unstable.jetbrains.rider
       unstable.jetbrains.rust-rover
+      unstable.jetbrains-toolbox
       micro
 
       # Archives
