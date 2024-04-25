@@ -25,6 +25,7 @@
       ubuntu_font_family
       cascadia-code
       iosevka
+      liberation_ttf
     ];
   };
 }
