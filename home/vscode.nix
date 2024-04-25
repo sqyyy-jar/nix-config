@@ -25,20 +25,6 @@
       "rust-analyzer.inlayHints.lifetimeElisionHints.enable" = "skip_trivial";
       "rust-analyzer.server.path" = "/etc/profiles/per-user/sqyyy/bin/rust-analyzer";
 
-      "[python]" = {
-        "editor.formatOnSave" = true;
-        "editor.codeActionsOnSave" = {
-          "source.fixAll" = true;
-          "source.organizeImports" = true;
-        };
-      };
-      # NOTE: Depends on the `black` package.
-      "python.formatting.provider" = "black";
-      "python.analysis.inlayHints.functionReturnTypes" = true;
-      "python.analysis.inlayHints.variableTypes" = true;
-      "python.analysis.typeCheckingMode" = "basic";
-      "python.testing.pytestEnabled" = true;
-      "python.terminal.activateEnvironment" = false;
       # NOTE: Depends on the `ruff` package.
       "ruff.path" = ["ruff"];
 
