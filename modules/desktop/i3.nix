@@ -29,4 +29,11 @@
   };
 
   services.dbus.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    xclip
+    xfce.thunar
+    feh # Wallpaper
+    picom # Transparency
+  ];
 }
