@@ -38,6 +38,7 @@ in {
       neofetch
       flameshot
       sapling
+      google-drive-ocamlfuse
 
       # Applications
       gimp
@@ -58,9 +59,9 @@ in {
       unstable.floorp
 
       # Communication
-      (discord.override {
-        withVencord = true;
-      })
+      discord
+      unstable.zulip
+      unstable.zulip-term
       unstable.thunderbird
 
       # Development
@@ -71,7 +72,9 @@ in {
       unstable.jetbrains.rider
       unstable.jetbrains.rust-rover
       unstable.jetbrains-toolbox
-      micro
+      unstable.zed-editor
+      unstable.alacritty
+      cutter # Debugger
 
       # Archives
       ark
