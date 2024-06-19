@@ -17,6 +17,7 @@
     enable = true;
     enableSshSupport = true;
     enableZshIntegration = true;
+    # pinentryPackage = pkgs.pinentry-qt;
     pinentryFlavor = "qt";
   };
 }

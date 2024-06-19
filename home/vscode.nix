@@ -52,7 +52,7 @@
       kamadorueda.alejandra
       mkhl.direnv
       tamasfe.even-better-toml
-      matklad.rust-analyzer
+      rust-lang.rust-analyzer
       vscodevim.vim
       vadimcn.vscode-lldb
     ];

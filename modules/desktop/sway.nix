@@ -8,6 +8,7 @@
   services.xserver = {
     enable = true;
     displayManager.sddm.enable = true;
+    wacom.enable = true;
     # displayManager.extraSessionFilePackages = [pkgs.sway];
   };
 
@@ -40,9 +41,14 @@
     swaylock
     swayidle
     fuzzel # application launcher
+    rofi-wayland # "
     xfce.thunar
-    flameshot # screenshot tool
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
+    # slurp
+    # grim
+    # wf-recorder
+    # wlr-randr
+    xdg-desktop-portal-wlr
     mako # notification system developed by swaywm maintainer
     wdisplays # tool to configure displays
     brightnessctl # brightness configuration

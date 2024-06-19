@@ -33,6 +33,7 @@ in {
       fd
       ripgrep
       tokei
+      hexyl
       wget
       btop
       neofetch
@@ -48,7 +49,8 @@ in {
       obs-studio
       unstable.obsidian
       unstable.logseq
-      unstable.geogebra
+      #geogebra
+      #geogebra6
       tidal-hifi
       kdeconnect
       prismlauncher
@@ -56,21 +58,22 @@ in {
       libreoffice
       unstable.planify
       lite-xl
-      unstable.floorp
+      unstable.floorp-unwrapped
+      firefox-bin
 
       # Communication
       discord
       unstable.zulip
       unstable.zulip-term
       unstable.thunderbird
+      iamb
+      element-desktop
 
       # Development
       python311
       gdb
       dia
       unstable.jetbrains.idea-ultimate
-      unstable.jetbrains.rider
-      unstable.jetbrains.rust-rover
       unstable.jetbrains-toolbox
       unstable.zed-editor
       unstable.alacritty

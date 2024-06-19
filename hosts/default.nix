@@ -76,7 +76,6 @@ in {
       ../modules/hw/nvidia.nix
     ];
     homeModules = [
-      ../home/firefox.nix
       ../home/git.nix
       ../home/gpg.nix
       ../home/kitty.nix
@@ -101,7 +100,6 @@ in {
       ../home/wayland
       ../home/waybar.nix
 
-      ../home/firefox.nix
       ../home/git.nix
       ../home/gpg.nix
       ../home/kitty.nix
