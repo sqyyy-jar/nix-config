@@ -10,14 +10,13 @@
     cryptsetup
 
     # Securely accept passphrases.
-    pinentry-qt
+    #pinentry-qt
   ];
 
   services.gpg-agent = {
     enable = true;
     enableSshSupport = true;
     enableZshIntegration = true;
-    # pinentryPackage = pkgs.pinentry-qt;
-    pinentryFlavor = "qt";
+    pinentryPackage = pkgs.pinentry-qt;
   };
 }
