@@ -1,12 +1,15 @@
 diff --git a/config.def.h b/config.def.h
-index d805331..7774295 100644
+index d805331..eb5cfcd 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -65,5 +65,7 @@ static const char unknown_str[] = "n/a";
+@@ -64,6 +64,8 @@ static const char unknown_str[] = "n/a";
+  * wifi_perc           WiFi signal in percent          interface name (wlan0)
   */
  static const struct arg args[] = {
- 	/* function format          argument */
-+    { load_avg, "load: %s",     NULL },
-+    { uptime,   "uptime: %s",   NULL },
- 	{ datetime, "%s",           "%F %T" },
+-	/* function format          argument */
+-	{ datetime, "%s",           "%F %T" },
++	/* function format           argument */
++    { load_avg, "load: %s | ",   NULL },
++    { uptime,   "uptime: %s | ", NULL },
++	{ datetime, "%s",            "%F %T" },
  };
