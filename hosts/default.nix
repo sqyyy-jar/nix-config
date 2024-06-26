@@ -73,6 +73,7 @@ in {
       ./desktop.nix
 
       ../modules/desktop/i3.nix
+      ../modules/desktop/dwm.nix
       ../modules/hw/nvidia.nix
     ];
     homeModules = [

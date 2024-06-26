@@ -4,21 +4,17 @@
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
-  security.polkit.enable = true;
 
-  # services.displayManager.defaultSession = "none+i3";
+  services.displayManager.defaultSession = "none+dwm";
 
   services.xserver = {
     enable = true;
-    desktopManager.xterm.enable = true;
-    windowManager.i3 = {
+    windowManager.dwm = {
       enable = true;
-      extraPackages = with pkgs; [
-        dmenu
-        i3status
-        i3lock
-        i3blocks
-      ];
+      # desktopManager.xterm.enable = true;
+      package = pkgs.dwm.override {
+        patches = [./patches/dwm.patch];
+      };
     };
   };
 
@@ -37,7 +33,15 @@
     xfce.thunar
     feh # Wallpaper
     picom # Transparency
+    (slstatus.override {
+      patches = [./patches/slstatus.patch];
+    }) # Status bar
+    # (slock.override {
+    #   patches = [./patches/slock.patch];
+    # }) # Screen lock
   ];
+
+  programs.slock.enable = true; # Status bar
 
   i18n.inputMethod = {
     enabled = "ibus";
