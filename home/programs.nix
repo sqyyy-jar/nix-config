@@ -20,7 +20,7 @@ in {
       rustup
       gcc
       chez
-      unstable.jdk21
+      unstable.jdk22
       lua-language-server
       cargo-generate
       lldb
@@ -54,9 +54,7 @@ in {
       tidal-hifi
       kdeconnect
       prismlauncher
-      ungoogled-chromium # PWAs
       libreoffice
-      unstable.planify
       lite-xl
       unstable.floorp-unwrapped
       firefox-bin
@@ -78,6 +76,7 @@ in {
       unstable.zed-editor
       unstable.alacritty
       cutter # Debugger
+      unstable.imhex
 
       # Archives
       ark
