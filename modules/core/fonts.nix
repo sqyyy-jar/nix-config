@@ -26,6 +26,8 @@
       cascadia-code
       iosevka
       liberation_ttf
+      source-code-pro
+      monoid
     ];
   };
 }
