@@ -36,7 +36,7 @@ in {
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" ];
-      theme = "theunraveler";
+      theme = "lambda"; # imajes, lambda, sammy
     };
 
     plugins = with pkgs; [

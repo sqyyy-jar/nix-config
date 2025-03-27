@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   services.printing.enable = true;
 
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
 
@@ -28,6 +27,26 @@
 
   services.dbus.enable = true;
 
+  services.flatpak.enable = true;
+
+  services.picom.enable = true;
+
+  hardware.keyboard.qmk.enable = true;
+  services.udev.packages = [pkgs.via];
+
+  xdg.portal = {
+    enable = true;
+    config = {
+      common = {
+        default = "gtk";
+        "org.freedesktop.impl.portal.FileChooser" = "gtk";
+      };
+    };
+    configPackages = with pkgs; [xdg-desktop-portal-gtk];
+    extraPortals = with pkgs; [xdg-desktop-portal-gtk];
+    xdgOpenUsePortal = true;
+  };
+
   environment.systemPackages = with pkgs; [
     xclip
     xfce.thunar
@@ -39,12 +58,20 @@
     # (slock.override {
     #   patches = [./patches/slock.patch];
     # }) # Screen lock
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    gsettings-desktop-schemas
+    adwaita-qt
+    via
+    dunst
   ];
 
   programs.slock.enable = true; # Status bar
+  programs.dconf.enable = true;
 
   i18n.inputMethod = {
-    enabled = "ibus";
+    enable = true;
+    type = "ibus";
     ibus.engines = with pkgs.ibus-engines; [hangul];
   };
 }

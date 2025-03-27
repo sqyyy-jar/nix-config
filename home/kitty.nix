@@ -33,7 +33,7 @@
       "ctrl+up" = "resize_window taller 2";
       "ctrl+down" = "resize_window shorter 2";
     };
-    theme = "Adwaita dark";
+    # theme = "Adwaita dark";
     shellIntegration.enableZshIntegration = true;
   };
 }

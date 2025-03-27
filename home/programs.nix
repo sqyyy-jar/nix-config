@@ -20,10 +20,11 @@ in {
       rustup
       gcc
       chez
-      unstable.jdk22
+      guile
+      sbcl
+      unstable.jdk23
       lua-language-server
       cargo-generate
-      lldb
       dotnet-sdk
 
       # System utilities
@@ -34,12 +35,16 @@ in {
       ripgrep
       tokei
       hexyl
+      hyx
       wget
       btop
       neofetch
+      fastfetch
       flameshot
       sapling
       google-drive-ocamlfuse
+      onedrive
+      fish
 
       # Applications
       gimp
@@ -48,24 +53,25 @@ in {
       keepassxc
       obs-studio
       unstable.obsidian
-      unstable.logseq
       #geogebra
       #geogebra6
       tidal-hifi
-      kdeconnect
+      localsend
       prismlauncher
+      steam
       libreoffice
-      lite-xl
       unstable.floorp-unwrapped
       firefox-bin
+      unstable.librewolf
+      microsoft-edge
+      unstable.pixelorama
+      anki
 
       # Communication
       discord
-      unstable.zulip
-      unstable.zulip-term
-      unstable.thunderbird
       iamb
       element-desktop
+      signal-desktop
 
       # Development
       python311
@@ -73,10 +79,13 @@ in {
       dia
       unstable.jetbrains.idea-ultimate
       unstable.jetbrains-toolbox
-      unstable.zed-editor
+      unstable.zed-editor-fhs
       unstable.alacritty
-      cutter # Debugger
-      unstable.imhex
+      unstable.rio
+      # vscode
+      (cutter.withPlugins (ps: with ps; [ jsdec rz-ghidra sigdb ])) # Debugger
+      rizin
+      # unstable.imhex
 
       # Archives
       ark
@@ -85,6 +94,7 @@ in {
       atool
       zip
       p7zip
+      _7zz
 
       # System utilities
       ffmpeg

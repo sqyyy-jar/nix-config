@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   services.printing.enable = true;
 
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   security.polkit.enable = true;
@@ -15,6 +14,7 @@
       enable = true;
       extraPackages = with pkgs; [
         dmenu
+        rofi
         i3status
         i3lock
         i3blocks
@@ -40,7 +40,8 @@
   ];
 
   i18n.inputMethod = {
-    enabled = "ibus";
+    enable = true;
+    type = "ibus";
     ibus.engines = with pkgs.ibus-engines; [hangul];
   };
 }

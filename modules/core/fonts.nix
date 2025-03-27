@@ -28,6 +28,8 @@
       liberation_ttf
       source-code-pro
       monoid
+      mononoki
+      anonymousPro
     ];
   };
 }

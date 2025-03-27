@@ -27,7 +27,7 @@
 
       users.sqyyy = {...}: {
         imports = modules;
-        home.stateVersion = "23.11";
+        home.stateVersion = "24.11";
       };
     };
   };
@@ -52,6 +52,14 @@
                 inputs.rust-overlay.overlays.default
 
                 overlays.unstable-unfree-packages
+                
+                (self: super: {
+                  xdg-desktop-portal-gtk = super.xdg-desktop-portal-gtk.overrideAttrs {
+                    postInstall = ''
+                      sed -i 's/UseIn=gnome/UseIn=none+dwm;xterm+dwm/' $out/share/xdg-desktop-portal/portals/gtk.portal
+                    '';
+                  };
+                })
               ];
               config.allowUnfree = true;
             };
@@ -75,13 +83,13 @@ in {
       ../modules/desktop/i3.nix
       ../modules/desktop/dwm.nix
       ../modules/hw/nvidia.nix
+      ../modules/core/forgejo.nix
     ];
     homeModules = [
       ../home/git.nix
       ../home/gpg.nix
       ../home/kitty.nix
       ../home/programs.nix
-      ../home/vscode.nix
       ../home/zsh.nix
       ../home/neovim.nix
       ../home/direnv.nix

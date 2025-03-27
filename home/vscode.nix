@@ -54,7 +54,7 @@
       tamasfe.even-better-toml
       rust-lang.rust-analyzer
       vscodevim.vim
-      vadimcn.vscode-lldb
+      # vadimcn.vscode-lldb
     ];
   };
 }
